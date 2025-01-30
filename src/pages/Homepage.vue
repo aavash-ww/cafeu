@@ -98,6 +98,8 @@
                 </div>
             </div>
         </section>
+        <!-- Infinite Slider  -->
+        <InfiniteSlider />
         <!-- Review Section  -->
         <section class="review-section">
             <div class="review-container container">
@@ -118,7 +120,7 @@ import HeroSection from '../components/HeroSection.vue';
 import DiscoverCard from '../components/DiscoverCard.vue';
 import FoodCard from '../components/FoodCard.vue';
 import ReviewCard from '../components/ReviewCard.vue';
-import Slider from '../components/Slider.vue';
+import InfiniteSlider from '../components/InfiniteSlider.vue';
 import aboutdata from "../data/aboutdata.json";
 import menuicons from "../data/specialmenudata.json"
 
@@ -134,7 +136,7 @@ export default {
         DiscoverCard,
         FoodCard,
         ReviewCard,
-        Slider,
+        InfiniteSlider
     }
 }
 </script>

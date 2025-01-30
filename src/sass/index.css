@@ -44,6 +44,8 @@
   font-weight: bolder;
 }
 *,
+*::after,
+*::before,
 body,
 html {
   margin: 0;
@@ -328,7 +330,7 @@ input[type=text] {
   background-color: #cc3737;
 }
 .review-section {
-  padding: 4rem 0;
+  padding-top: 4rem;
 }
 .review-section .review-container .review-heading {
   text-align: center;
@@ -368,16 +370,6 @@ input[type=text] {
   width: 300px;
   height: 400px;
 }
-.playstore-section .palystore-wrapper .playstore-mobile-screens img {
-  width: 100%;
-  max-width: 200px;
-}
-.playstore-section .palystore-wrapper .playstore-mobile-screens .app1 {
-  animation: moveY 3s ease-in-out infinite alternate;
-}
-.playstore-section .palystore-wrapper .playstore-mobile-screens .app2 {
-  animation: moveY 3s ease-in-out infinite alternate-reverse;
-}
 @keyframes moveY {
   0% {
     transform: translateY(0);
@@ -388,6 +380,16 @@ input[type=text] {
   100% {
     transform: translateY(0);
   }
+}
+.playstore-section .palystore-wrapper .playstore-mobile-screens img {
+  width: 100%;
+  max-width: 200px;
+}
+.playstore-section .palystore-wrapper .playstore-mobile-screens .app1 {
+  animation: moveY 3s ease-in-out infinite alternate;
+}
+.playstore-section .palystore-wrapper .playstore-mobile-screens .app2 {
+  animation: moveY 3s ease-in-out infinite alternate-reverse;
 }
 
 .hero-section {
