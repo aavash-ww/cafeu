@@ -547,6 +547,7 @@ input[type=text] {
   flex: 50%;
 }
 .hero-section .hero-wrapper .button-container {
+  padding-bottom: 1rem;
   display: flex;
   gap: 1rem;
 }
