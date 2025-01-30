@@ -1,27 +1,31 @@
 <template>
     <div class="review-wrapper">
         <div class="review-section">
-            <div class="review-left-section">
-                <div>
-                    <img src="../assets/icons/review-icon.png" alt="">
-                </div>
-                <h2 class="review-title">James Smith List Specifications 2023</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatem accusamus
-                    possimus voluptatum nesciunt quisquam deleniti assumenda quibusdam quis hic.</p>
-                <div class="reviewer-section flex">
-                    <h3 class="reviewer-name">{{ reviews[currentIndex].reviewer }}</h3>-<small>{{
-                        reviews[currentIndex].type }}</small>
-                </div>
-                <div class="review-button-container">
-                    <button v-for="(data, index) in reviews" :key="index" class="slider-btn"
-                        :class="{ active: index === currentIndex }" @click="onButtonClick(index)">
+            <transition name="fade-slide">
+                <div class="review-left-section">
+                    <div>
+                        <img src="../assets/icons/review-icon.png" alt="">
+                    </div>
+                    <h2 class="review-title">James Smith List Specifications 2023</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatem accusamus
+                        possimus voluptatum nesciunt quisquam deleniti assumenda quibusdam quis hic.</p>
+                    <div class="reviewer-section flex">
+                        <h3 class="reviewer-name">{{ reviews[currentIndex].reviewer }}</h3>-<small>{{
+                            reviews[currentIndex].type }}</small>
+                    </div>
+                    <div class="review-button-container">
+                        <button v-for="(data, index) in reviews" :key="index" class="slider-btn"
+                            :class="{ active: index === currentIndex }" @click="onButtonClick(index)">
 
-                    </button>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="review-right-section">
-                <img :src="reviews[currentIndex].image" alt="">
-            </div>
+            </transition>
+            <transition name="fade-slide">
+                <div class="review-right-section">
+                    <img :src="reviews[currentIndex].image" alt="">
+                </div>
+            </transition>
         </div>
     </div>
 </template>

@@ -110,7 +110,7 @@
                 <ReviewCard />
             </div>
         </section>
-        <Slider />
+        <ReviewCardee />
     </div>
 
 </template>
@@ -121,6 +121,7 @@ import DiscoverCard from '../components/DiscoverCard.vue';
 import FoodCard from '../components/FoodCard.vue';
 import ReviewCard from '../components/ReviewCard.vue';
 import InfiniteSlider from '../components/InfiniteSlider.vue';
+import ReviewCardee from '../components/ReviewCardee.vue';
 import aboutdata from "../data/aboutdata.json";
 import menuicons from "../data/specialmenudata.json"
 
@@ -136,7 +137,8 @@ export default {
         DiscoverCard,
         FoodCard,
         ReviewCard,
-        InfiniteSlider
+        InfiniteSlider,
+        ReviewCardee
     }
 }
 </script>

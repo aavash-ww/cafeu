@@ -27,7 +27,24 @@
   background-color: $primaryColor;
   border-radius: 4px;
   cursor: pointer;
-  &:hover{
+  &:hover {
     background-color: #292929;
   }
+}
+
+%footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+%underline {
+  margin-top: 4px;
+  height: 4px;
+  width: 8rem;
+  background-color: #fff;
 }
