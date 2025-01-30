@@ -1,0 +1,26 @@
+[
+  {
+    "image": "/src/assets/images/asian.png",
+    "title": "Coleslaw"
+  },
+  {
+    "image": "/src/assets/images/bakery.png",
+    "title": "Chocolate Brownie"
+  },
+  {
+    "image": "/src/assets/images/burger.png",
+    "title": "Ceaser Salad"
+  },
+  {
+    "image": "/src/assets/images/chicken.png",
+    "title": "Cheicken Alfredo"
+  },
+  {
+    "image": "/src/assets/images/drinks.png",
+    "title": "Mojito"
+  },
+  {
+    "image": "/src/assets/images/pizza.png",
+    "title": "Margherita Pizza"
+  }
+]

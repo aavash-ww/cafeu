@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "/src/assets/icons/menu-icon1.png",
+    "title": "All"
+  },
+  {
+    "icon": "/src/assets/icons/menu-icon2.png",
+    "title": "Pizza"
+  },
+  {
+    "icon": "/src/assets/icons/menu-icon3.png",
+    "title": "Asian"
+  },
+  {
+    "icon": "/src/assets/icons/menu-icon4.png",
+    "title": "Burger"
+  },
+  {
+    "icon": "/src/assets/icons/menu-icon5.png",
+    "title": "Salad"
+  },
+  {
+    "icon": "/src/assets/icons/menu-icon6.png",
+    "title": "Bakery"
+  },
+  {
+    "icon": "/src/assets/icons/menu-icon7.png",
+    "title": "Drink"
+  }
+]

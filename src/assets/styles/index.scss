@@ -1,0 +1,21 @@
+@import "abstracts/variables";
+@import "abstracts/placeholders";
+@import "abstracts/mediaqueries";
+
+@import "base/typography";
+@import "base/reset";
+
+@import "utilities";
+
+@import "layouts/navbar";
+@import "layouts/foodcard";
+@import "layouts/review";
+@import "layouts/specialoffers";
+
+
+@import "pages/homepage";
+
+@import "components/hero";
+@import "components/discovercard";
+@import "components/aboutsection";
+@import "components/specialmenu";

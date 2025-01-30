@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "/src/assets/icons/quality-icon.png",
+    "title": "100% Swiss Quality",
+    "description": "Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua"
+  },
+  {
+    "icon": "/src/assets/icons/foodlaw.png",
+    "title": "Food Law Certified",
+    "description": "Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua"
+  },
+  {
+    "icon": "/src/assets/icons/foodpro.png",
+    "title": "Certified Food Production",
+    "description": "Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua"
+  },
+  {
+    "icon": "/src/assets/icons/organic.png",
+    "title": "Organic Production",
+    "description": "Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "icon": "/src/assets/icons/buffet-icon.png",
+    "title": "Buffet Service",
+    "description": "Qariatureaque ipsa quae a illo inventore veritatis et quasi architecto"
+  },
+  {
+    "icon": "/src/assets/icons/onlinebooking-icon.png",
+    "title": "Online Booking",
+    "description": "Qariatureaque ipsa quae a illo inventore veritatis et quasi architecto"
+  }
+]

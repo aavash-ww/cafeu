@@ -1,0 +1,75 @@
+.review-section {
+  padding: 4rem 0;
+  .review-container {
+    .review-heading {
+      text-align: center;
+      h4 {
+        margin-bottom: 1rem;
+      }
+      h3 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+//mda
+.playstore-section {
+  padding: 8rem 0;
+  .palystore-wrapper {
+    height: 28rem;
+    width: 100%;
+    background-color: #fbf1e8;
+    // @extend %align-center;
+    display: flex;
+    gap: 6rem;
+    border-radius: 4px;
+    .playstore-text {
+      flex: 60%;
+      padding-top: 4rem;
+      padding-left: 2rem;
+      // padding: 3rem 0 2rem 1rem;
+      @extend %flex-column;
+      gap: 2rem;
+      .get-it-on {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+    // .playstore-mobile-screens {
+    //   flex: 40%;
+    //   display: flex;
+    //   gap: 1rem;
+
+    // }
+    .playstore-mobile-screens {
+      flex: 40%;
+      gap: 1rem;
+      display: flex;
+      width: 300px;
+      height: 400px;
+
+      img {
+        width: 100%;
+        max-width: 200px;
+      }
+      .app1 {
+        animation: moveY 3s ease-in-out infinite alternate;
+      }
+      .app2 {
+        animation: moveY 3s ease-in-out infinite alternate-reverse;
+      }
+    }
+    @keyframes moveY {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+}

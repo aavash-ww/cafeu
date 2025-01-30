@@ -1,0 +1,51 @@
+.review-wrapper {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  .review-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    .review-left-section {
+      flex: 60%;
+      padding: 0 4rem;
+      box-shadow: 0 0 13px 1px #ddd;
+      @extend %flex-column;
+      border-left: 2px solid $primaryColor;
+
+      gap: 2rem;
+      .review-title {
+        font-size: 2.2rem;
+      }
+      .reviewer-section {
+        align-items: center;
+        .reviewer-name {
+          font-size: 1rem;
+        }
+        small {
+          font-size: 0.8rem;
+        }
+      }
+      .review-button-container {
+        display: flex;
+        gap: 0.5rem;
+        .slider-btn {
+          width: 0.5rem;
+          height: 0.5rem;
+          border: none;
+          background-color: gray;
+          border-radius: 50%;
+        }
+        .slider-btn.active {
+          background-color: $primaryColor;
+        }
+      }
+    }
+    .review-right-section {
+      flex: 40%;
+      height: 28rem;
+      img {
+        @extend %image-contain;
+      }
+    }
+  }
+}

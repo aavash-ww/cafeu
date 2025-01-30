@@ -1,0 +1,17 @@
+[
+  {
+    "reviewer": "Aabsh Thapa",
+    "image": "/src/assets/images/reviewer1.png",
+    "type": "Regular Customer"
+  },
+  {
+    "reviewer": "Aakash Thapa",
+    "image": "/src/assets/images/reviewer2.png",
+    "type": "Customer"
+  },
+  {
+    "reviewer": "Abhsihek Thapa",
+    "image": "/src/assets/images/reviewer3.png",
+    "type": "VIP Customer"
+  }
+]

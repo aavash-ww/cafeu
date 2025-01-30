@@ -1,0 +1,33 @@
+%content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%align-center {
+  display: flex;
+  align-items: center;
+}
+
+%image-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%button-primary {
+  padding: 1rem 1.8rem;
+  border: none;
+  color: white;
+  background-color: $primaryColor;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover{
+    background-color: #292929;
+  }
+}
