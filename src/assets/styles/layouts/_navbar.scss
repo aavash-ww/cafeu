@@ -1,43 +1,63 @@
 .header {
-    position: sticky;
-    top: 0;
-    padding: 1.4rem 0;
-    background-color: #f6f5f5;
-    .header-wrapper {
-      @extend %align-center;
-      justify-content: space-between;
-      color: #606060;
-      .nav-wrapper {
-        @extend %content-center;
-        gap: 2rem;
-        .navbar {
-          font-size: 1rem;
-          line-height: 1.6;
-          .navbar-lists {
-            @extend %content-center;
-            gap: 1.5rem;
-            .navlinks {
-              .dropdown-icon {
-                width: 1rem;
-                height: 1rem;
-                object-fit: cover;
-                transition: transform 0.3s ease;
+  position: sticky;
+  top: 0;
+  padding: 1.4rem 0;
+  background-color: #f6f5f5;
+  .header-wrapper {
+    @extend %align-center;
+    justify-content: space-between;
+    color: #606060;
+    .nav-wrapper {
+      @extend %content-center;
+      gap: 2rem;
+      .navbar {
+        font-size: 1rem;
+        line-height: 1.6;
+        .navbar-lists {
+          @extend %content-center;
+          gap: 1.5rem;
+
+          .navlinks {
+            position: relative;
+            .dropdown-icon {
+              width: 1rem;
+              height: 1rem;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            }
+            &:hover .dropdown-icon {
+              transform: rotate(180deg);
+            }
+            .dropdown-list {
+              width: 120px;
+              background: #fff;
+              position: absolute;
+              visibility: hidden;
+              border-top: solid 2px $primaryColor;
+              li {
+                padding: 0.5rem;
+                border-bottom: gray 1px solid;
+                &:hover {
+                  background-color: #e2dede;
+                }
               }
-              &:hover .dropdown-icon {
-                transform: rotate(180deg);
+            }
+            &:hover {
+              .dropdown-list {
+                visibility: visible;
               }
             }
           }
         }
-  
-        .search-icon {
-          width: 1rem;
-          height: 1rem;
-          .search-image {
-            @extend %image-contain;
-          }
+      }
+
+      .search-icon {
+        width: 1rem;
+        height: 1rem;
+        .search-image {
+          @extend %image-contain;
         }
       }
     }
   }
-  
+}

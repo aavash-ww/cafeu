@@ -8,41 +8,66 @@
                 <div class="navbar">
                     <ul class="navbar-lists">
                         <li class="navlinks">
-                            <router-link>
+                            <a href="/">
                                 Home
-                            </router-link>
+                            </a>
                         </li>
                         <li class="navlinks">
-                            <router-link>
+                            <a>
                                 About Us
-                            </router-link>
+                            </a>
                             <img src="/src/assets/icons/dropdown-icon.svg" alt="dropdown" class="dropdown-icon">
+                            <ul class="dropdown-list">
+                                <li>Home</li>
+                                <li>Pages</li>
+                                <li>Blogs</li>
+                            </ul>
                         </li>
                         <li class="navlinks">
-                            <router-link>
+                            <a>
                                 Menu
-                            </router-link>
+                            </a>
                             <img src="/src/assets/icons/dropdown-icon.svg" alt="dropdown" class="dropdown-icon">
+                            <ul class="dropdown-list">
+                                <li>Home</li>
+                                <li>Pages</li>
+                                <li>Blogs</li>
+                            </ul>
                         </li>
                         <li class="navlinks">
-                            <router-link>
+                            <a>
                                 Blog
-                            </router-link>
+                            </a>
                             <img src="/src/assets/icons/dropdown-icon.svg" alt="dropdown" class="dropdown-icon">
+                            <ul class="dropdown-list">
+                                <li>Home</li>
+                                <li>Pages</li>
+                                <li>Blogs</li>
+                            </ul>
                         </li>
                         <li class="navlinks">
-                            <router-link>
+                            <a>
                                 Pages
-                            </router-link>
+                            </a>
                             <img src="/src/assets/icons/dropdown-icon.svg" alt="dropdown" class="dropdown-icon">
+                            <ul class="dropdown-list">
+                                <li>Home</li>
+                                <li>Pages</li>
+                                <li>Blogs</li>
+                            </ul>
                         </li>
                         <li class="navlinks">
-                            <router-link>
+                            <a>
                                 Contacts
-                            </router-link>
+                            </a>
                             <img src="/src/assets/icons/dropdown-icon.svg" alt="dropdown" class="dropdown-icon">
+                            <ul class="dropdown-list">
+                                <li>Home</li>
+                                <li>Pages</li>
+                                <li>Blogs</li>
+                            </ul>
                         </li>
-                       
+
                     </ul>
                 </div>
                 <div class="search-icon">
