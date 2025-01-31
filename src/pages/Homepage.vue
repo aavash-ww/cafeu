@@ -110,6 +110,18 @@
                 <ReviewCard />
             </div>
         </section>
+        <!-- News and Blog  -->
+        <section>
+            <div class="news-section">
+                <div class="news-wrapper container">
+                    <div class="news-heading">
+                        <h4>News & Blogs</h4>
+                        <h3>Latest News</h3>
+                    </div>
+                    <NewsCard />
+                </div>
+            </div>
+        </section>
     </div>
 
 </template>
@@ -120,6 +132,7 @@ import DiscoverCard from '../components/DiscoverCard.vue';
 import FoodCard from '../components/FoodCard.vue';
 import ReviewCard from '../components/ReviewCard.vue';
 import InfiniteSlider from '../components/InfiniteSlider.vue';
+import NewsCard from '../components/NewsCard.vue';
 import aboutdata from "../data/aboutdata.json";
 import menuicons from "../data/specialmenudata.json"
 
@@ -136,6 +149,7 @@ export default {
         FoodCard,
         ReviewCard,
         InfiniteSlider,
+        NewsCard
     }
 }
 </script>

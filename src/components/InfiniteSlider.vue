@@ -20,7 +20,6 @@
     background-size: cover;
     height: 12rem;
     padding: 2rem 0;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +30,6 @@
     gap: 8rem;
     width: max-content;
     animation: scrollLeft 30s linear infinite;
-    overflow: hidden;
 }
 
 @keyframes scrollLeft {
