@@ -536,6 +536,7 @@ input[type=text] {
   background-color: #f6f5f5;
 }
 .hero-section .hero-wrapper {
+  z-index: 20;
   gap: 2rem;
   flex-direction: column;
 }
@@ -580,6 +581,31 @@ input[type=text] {
 .hero-section .hero-wrapper .button-container .slider-btn.active {
   background-color: #cc3737;
 }
+.hero-section .bg-fillers .eggplant {
+  position: absolute;
+  z-index: 1;
+  right: -2%;
+  top: 20%;
+}
+.hero-section .bg-fillers .fork {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 40%;
+  transform: rotate(10deg);
+}
+.hero-section .bg-fillers .brocoli {
+  position: absolute;
+  z-index: 1;
+  bottom: 1%;
+  left: -4%;
+  transform: rotate(40deg);
+}
+.hero-section .bg-fillers img {
+  width: 12rem;
+  height: auto;
+  opacity: 0.04;
+}
 
 .discover-container {
   margin-top: 8rem;
@@ -621,7 +647,7 @@ input[type=text] {
 }
 .discover-container .discover-wrapper .discover-card-wrapper .discover-card:hover {
   border: none;
-  box-shadow: 0 10px 10px gray;
+  box-shadow: rgb(231, 230, 230) 0px 0px 20px 1px;
   cursor: pointer;
 }
 .discover-container .discover-wrapper .discover-card-wrapper .discover-card:hover .discover-card-title {

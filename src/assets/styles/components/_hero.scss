@@ -2,6 +2,7 @@
   padding-top: 4rem;
   background-color: #f6f5f5;
   .hero-wrapper {
+    z-index: 20;
     @extend %content-center;
     gap: 2rem;
     flex-direction: column;
@@ -59,6 +60,34 @@
       .slider-btn.active {
         background-color: $primaryColor;
       }
+    }
+  }
+  .bg-fillers {
+    .eggplant {
+      position: absolute;
+      z-index: 1;
+      right: -2%;
+      top: 20%;
+    }
+    .fork {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 40%;
+      transform: rotate(10deg);
+    }
+    .brocoli {
+      position: absolute;
+      z-index: 1;
+      bottom: 1%;
+      left: -4%;
+      transform: rotate(40deg);
+    }
+    
+    img {
+      width: 12rem;
+      height: auto;
+      opacity: 0.04;
     }
   }
 }

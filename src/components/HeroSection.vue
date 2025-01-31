@@ -30,6 +30,12 @@
         </button>
       </div>
     </div>
+    <div class="bg-fillers">
+      <img class="eggplant" src="../assets/icons/bg-hero/aubergine-brinjal-eggplant-svgrepo-com.svg" alt="">
+      <img class="brocoli" src="../assets/icons/bg-hero/broccoli-brocoli-brocolli-svgrepo-com.svg" alt="">
+      <img class="fork" src="../assets/icons/bg-hero/food-restaurant-svgrepo-com.svg" alt="">
+    </div>
+
   </div>
 </template>
 
