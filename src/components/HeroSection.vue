@@ -1,6 +1,6 @@
 <template>
   <div class="hero-section">
-    <div class="hero-wrapper container">
+    <div class="hero-wrapper ">
       <div class="hero-container">
         <div class="hero-content">
           <div class="text-content">

@@ -52,6 +52,12 @@
   background-color: #fff;
 }
 
+.hero-section .hero-wrapper .hero-container, .header .header-wrapper {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: "Arioso";
   src: url("/src/assets/fonts/Arioso Regular.ttf") format("truetype");
@@ -114,12 +120,6 @@ input[type=text] {
   border: none;
 }
 
-.container {
-  width: 100%;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 .text-accent {
   color: #292929;
 }
@@ -139,6 +139,13 @@ input[type=text] {
 .header .header-wrapper {
   justify-content: space-between;
   color: #606060;
+}
+@media screen and (max-width: 1000px) {
+  .header .header-wrapper {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 460px) {
   .header .header-wrapper .logo img {
@@ -619,6 +626,9 @@ input[type=text] {
 @media screen and (max-width: 1000px) {
   .hero-section .hero-wrapper .hero-container {
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 .hero-section .hero-wrapper .hero-container .hero-content {

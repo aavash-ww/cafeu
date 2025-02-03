@@ -5,6 +5,12 @@
   background-color: #f6f5f5;
   z-index: 10000;
   .header-wrapper {
+    @extend %container;
+    @include lg {
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+    }
     @extend %align-center;
     justify-content: space-between;
     color: #606060;
@@ -78,7 +84,7 @@
         width: 1.5rem;
         height: 1.5rem;
         @include breakpoint(309px) {
-          display: none
+          display: none;
         }
         .search-image {
           @extend %image-contain;

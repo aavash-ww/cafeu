@@ -9,8 +9,13 @@
     .hero-container {
       @extend %align-center;
       gap: 2rem;
+      @extend %container;
+
       @include lg {
         flex-wrap: wrap;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
       }
       .hero-content {
         @include lg {
@@ -40,7 +45,6 @@
               font-size: 0.8rem;
             }
           }
-
         }
         .order-container {
           margin: 0 auto;
