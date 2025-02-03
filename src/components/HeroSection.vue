@@ -8,7 +8,7 @@
 
             <h1 class="hero-heading">{{ slides[currentIndex].title }}</h1>
 
-            <p>{{ slides[currentIndex].description }}</p>
+            <p class="hero-description">{{ slides[currentIndex].description }}</p>
           </div>
           <div class="order-container">
             <div class="order-button">Order Now</div>

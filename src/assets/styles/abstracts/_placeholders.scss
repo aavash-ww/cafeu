@@ -22,11 +22,13 @@
 
 %button-primary {
   padding: 1rem 1.8rem;
+  text-wrap: nowrap;
   border: none;
   color: white;
   background-color: $primaryColor;
   border-radius: 4px;
   cursor: pointer;
+ 
   &:hover {
     background-color: #292929;
   }
