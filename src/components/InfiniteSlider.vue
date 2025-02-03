@@ -1,6 +1,6 @@
 <template>
     <section class="infinite-slider">
-        <div class="infinite-slider-wrapper container">
+        <div class="infinite-slider-wrapper">
             <img class="slide slide1" src="../assets/images/slide1.png" alt="">
             <img class="slide slide2" src="../assets/images/slide2.png" alt="">
             <img class="slide slide3" src="../assets/images/slide3.png" alt="">
@@ -13,6 +13,7 @@
 
 <style scoped>
 .infinite-slider {
+    /* overflow: hidden; */
     margin-bottom: 4rem;
     background-image: url("/src/assets/images/bg-cafeu.png");
     background-position: center;
@@ -26,6 +27,7 @@
 }
 
 .infinite-slider-wrapper {
+    /* overflow: hidden; */
     display: flex;
     gap: 8rem;
     width: max-content;
@@ -43,7 +45,7 @@
 }
 
 .slide {
-    width: 200px;
+    width: 150px;
     height: 56px;
     flex-shrink: 0;
 }

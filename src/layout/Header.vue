@@ -70,16 +70,20 @@
 
                     </ul>
                 </div>
+
                 <div class="search-icon">
                     <img src="../assets/icons/search-icon.svg" alt="search" class="search-image">
                 </div>
-                <div class="header__contact-icon">
+                <div class="contact-icon">
                     <img src="../assets/icons/contact-icon.png" alt="contact-icon">
                 </div>
-                <div class="header__contactnum">
+                <div class="contactnum">
                     (+977) 9863788334
                 </div>
+                <!-- Burger menu  -->
+                <Icon icon="material-symbols:menu" class="burger-menu" />
             </div>
+
         </div>
     </header>
 </template>

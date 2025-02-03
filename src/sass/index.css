@@ -139,12 +139,23 @@ input[type=text] {
   justify-content: space-between;
   color: #606060;
 }
+@media screen and (max-width: 460px) {
+  .header .header-wrapper .logo img {
+    width: 6rem;
+    height: auto;
+  }
+}
 .header .header-wrapper .nav-wrapper {
   gap: 2rem;
 }
 .header .header-wrapper .nav-wrapper .navbar {
   font-size: 1rem;
   line-height: 1.6;
+}
+@media (max-width: 1279px) {
+  .header .header-wrapper .nav-wrapper .navbar {
+    display: none;
+  }
 }
 .header .header-wrapper .nav-wrapper .navbar .navbar-lists {
   gap: 1.5rem;
@@ -179,10 +190,54 @@ input[type=text] {
 .header .header-wrapper .nav-wrapper .navbar .navbar-lists .navlinks:hover .dropdown-list {
   visibility: visible;
 }
-.header .header-wrapper .nav-wrapper .search-icon {
-  width: 1rem;
-  height: 1rem;
+@media screen and (max-width: 768px) {
+  .header .header-wrapper .nav-wrapper .contactnum {
+    display: none;
+  }
 }
+@media screen and (max-width: 460px) {
+  .header .header-wrapper .nav-wrapper .contact-icon {
+    display: none;
+  }
+}
+.header .header-wrapper .nav-wrapper .search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+@media (max-width: 309px) {
+  .header .header-wrapper .nav-wrapper .search-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header .header-wrapper .nav-wrapper .search-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+.header .header-wrapper .nav-wrapper .burger-menu {
+  display: none;
+  color: gray;
+  transition: color 0.3s ease-in-out;
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 1279px) {
+  .header .header-wrapper .nav-wrapper .burger-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header .header-wrapper .nav-wrapper .burger-menu {
+    width: 24px;
+    height: 24px;
+  }
+}
+.header .header-wrapper .nav-wrapper .burger-menu:hover {
+  cursor: pointer;
+  color: #cc3737;
+}
+
 .food-card-container {
   display: grid;
   gap: 1rem;

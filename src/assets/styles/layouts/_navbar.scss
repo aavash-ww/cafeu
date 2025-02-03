@@ -8,10 +8,21 @@
     @extend %align-center;
     justify-content: space-between;
     color: #606060;
+    .logo {
+      img {
+        @include sm {
+          width: 6rem;
+          height: auto;
+        }
+      }
+    }
     .nav-wrapper {
       @extend %content-center;
       gap: 2rem;
       .navbar {
+        @include breakpoint(1279px) {
+          display: none;
+        }
         font-size: 1rem;
         line-height: 1.6;
         .navbar-lists {
@@ -52,11 +63,48 @@
         }
       }
 
+      .contactnum {
+        @include md {
+          display: none;
+        }
+      }
+
+      .contact-icon {
+        @include sm {
+          display: none;
+        }
+      }
       .search-icon {
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        @include breakpoint(309px) {
+          display: none
+        }
         .search-image {
           @extend %image-contain;
+        }
+        @include sm {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+      .burger-menu {
+        display: none;
+        color: gray;
+        transition: color 0.3s ease-in-out;
+        width: 32px;
+        height: 32px;
+
+        @include breakpoint(1279px) {
+          display: block;
+        }
+        @include sm {
+          width: 24px;
+          height: 24px;
+        }
+        &:hover {
+          cursor: pointer;
+          color: $primaryColor;
         }
       }
     }

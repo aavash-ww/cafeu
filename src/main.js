@@ -2,5 +2,10 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "./sass/index.css";
 import router from "./router/router";
+import { Icon } from "@iconify/vue";
 
-createApp(App).use(router).mount("#app");
+const app = createApp(App);
+app.use(router);
+app.mount("#app");
+app.component("Icon", Icon);
+// createApp(App).use(router).mount("#app");
