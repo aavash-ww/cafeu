@@ -8,4 +8,3 @@ const app = createApp(App);
 app.use(router);
 app.mount("#app");
 app.component("Icon", Icon);
-// createApp(App).use(router).mount("#app");

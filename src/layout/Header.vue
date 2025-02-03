@@ -81,7 +81,7 @@
                     (+977) 9863788334
                 </div>
                 <!-- Burger menu  -->
-                <Icon icon="material-symbols:menu-open" class="burger-menu" />
+                <Icon icon="material-symbols:menu-open" class="burger-menu"/>
             </div>
 
         </div>
