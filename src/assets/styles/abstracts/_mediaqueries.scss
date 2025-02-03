@@ -14,6 +14,13 @@
     @content;
   }
 }
+@mixin lg {
+  @media screen and (max-width: 1000px) {
+    @content;
+  }
+}
+
+
 
 //custom responsive
 @mixin breakpoint($bp: 0) {
