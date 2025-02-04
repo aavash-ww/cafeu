@@ -106,14 +106,14 @@
     .fork {
       position: absolute;
       z-index: 1;
-      top: 50%;
+      top: 10%;
       left: 40%;
       transform: rotate(10deg);
     }
     .brocoli {
       position: absolute;
       z-index: 1;
-      bottom: 1%;
+      top: 30%;
       left: -4%;
       transform: rotate(40deg);
     }
@@ -122,6 +122,12 @@
       width: 12rem;
       height: auto;
       opacity: 0.04;
+      @include md {
+        width: 8rem;
+      }
+      @include sm {
+        width: 4rem;
+      }
     }
   }
 }

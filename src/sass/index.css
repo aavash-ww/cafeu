@@ -10,14 +10,14 @@
   align-items: center;
 }
 
-.newscard-container .newscard .news-image-content img, .about-section .about-wrapper .about-image img, .discover-container .discover-wrapper .discover-card-wrapper .discover-card .discover-image img, .hero-section .hero-wrapper .hero-container .hero-image img, .hero-section .hero-wrapper .hero-container .hero-content .order-container .play-icon .play-icon-image, .footer .footer-wrapper .footer-content-third .footergrid .grid img, .special-offers-container .special-offer-wrapper .special-offer-mail .special-offer-submit-icon img, .review-wrapper .review-section .review-right-section img, .food-card-container .food-card .food-card-content .food-card-bottom .cart-icon img, .food-card-container .food-card .food-card-content .food-card-bottom .plus-icon img, .food-card-container .food-card .food-card-image img, .header .header-wrapper .nav-wrapper .search-icon .search-image {
+.newscard-container .newscard .news-image-content img, .special-menu-container .special-menu-wrapper .special-menu-bar .special-menu-nav .special-menu-icon img, .about-section .about-wrapper .about-image img, .discover-container .discover-wrapper .discover-card-wrapper .discover-card .discover-image img, .hero-section .hero-wrapper .hero-container .hero-image img, .hero-section .hero-wrapper .hero-container .hero-content .order-container .play-icon .play-icon-image, .footer .footer-wrapper .footer-content-third .footergrid .grid img, .special-offers-container .special-offer-wrapper .special-offer-mail .special-offer-submit-icon img, .review-wrapper .review-section .review-right-section img, .food-card-container .food-card .food-card-content .food-card-bottom .cart-icon img, .food-card-container .food-card .food-card-content .food-card-bottom .plus-icon img, .food-card-container .food-card .food-card-image img, .header .header-wrapper .nav-wrapper .search-icon .search-image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.special-menu-container .special-menu-wrapper .special-menu-icons .special-menu-nav, .about-section .about-wrapper .about-content .about-text-content, .discover-container .discover-wrapper .discover-card-wrapper .discover-card, .hero-section .hero-wrapper .hero-container .hero-content .text-content, .hero-section .hero-wrapper .hero-container .hero-content, .playstore-section .palystore-wrapper .playstore-text, .review-wrapper .review-section .review-left-section {
+.special-menu-container .special-menu-wrapper .special-menu-bar .special-menu-nav, .about-section .about-wrapper .about-content .about-text-content, .discover-container .discover-wrapper .discover-card-wrapper .discover-card, .hero-section .hero-wrapper .hero-container .hero-content .text-content, .hero-section .hero-wrapper .hero-container .hero-content, .playstore-section .palystore-wrapper .playstore-text, .review-wrapper .review-section .review-left-section {
   display: flex;
   flex-direction: column;
 }
@@ -52,7 +52,7 @@
   background-color: #fff;
 }
 
-.about-section .about-wrapper, .discover-container .discover-wrapper, .hero-section .hero-wrapper .hero-container, .special-offers-container .special-offer-wrapper, .header .header-wrapper {
+.special-menu-container .special-menu-wrapper, .about-section .about-wrapper, .discover-container .discover-wrapper, .hero-section .hero-wrapper .hero-container, .special-offers-container .special-offer-wrapper, .header .header-wrapper {
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
@@ -247,15 +247,27 @@ input[type=text] {
 }
 
 .food-card-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
 }
 .food-card-container .food-card {
+  flex: 1 1 calc(33.33% - 1rem);
   position: relative;
   margin-top: 1rem;
   max-width: 22rem;
   background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .food-card-container .food-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+@media screen and (max-width: 460px) {
+  .food-card-container .food-card {
+    flex: 1 1 100%;
+  }
 }
 .food-card-container .food-card:hover {
   cursor: pointer;
@@ -297,6 +309,11 @@ input[type=text] {
   line-height: 1.4;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 460px) {
+  .food-card-container .food-card .food-card-content p {
+    font-size: 0.8rem;
+  }
+}
 .food-card-container .food-card .food-card-content .food-card-bottom {
   margin-top: 1.5rem;
   display: flex;
@@ -307,6 +324,11 @@ input[type=text] {
   font-size: 1rem;
   color: #cc3737;
   font-weight: lighter;
+}
+@media (max-width: 872px) {
+  .food-card-container .food-card .food-card-content .food-card-bottom .delivery-price {
+    font-size: 0.9rem;
+  }
 }
 .food-card-container .food-card .food-card-content .food-card-bottom .plus-icon {
   border: gray solid 1px;
@@ -320,6 +342,12 @@ input[type=text] {
   height: 2.2rem;
   padding: 6px;
   background-color: #292929;
+}
+@media (max-width: 872px) {
+  .food-card-container .food-card .food-card-content .food-card-bottom .cart-icon {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 .food-card-container .food-card .price {
   position: absolute;
@@ -751,14 +779,14 @@ input[type=text] {
 .hero-section .bg-fillers .fork {
   position: absolute;
   z-index: 1;
-  top: 50%;
+  top: 10%;
   left: 40%;
   transform: rotate(10deg);
 }
 .hero-section .bg-fillers .brocoli {
   position: absolute;
   z-index: 1;
-  bottom: 1%;
+  top: 30%;
   left: -4%;
   transform: rotate(40deg);
 }
@@ -767,10 +795,20 @@ input[type=text] {
   height: auto;
   opacity: 0.04;
 }
+@media screen and (max-width: 768px) {
+  .hero-section .bg-fillers img {
+    width: 8rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .hero-section .bg-fillers img {
+    width: 4rem;
+  }
+}
 
 .discover-container {
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
   display: flex;
   justify-content: center;
 }
@@ -979,9 +1017,13 @@ input[type=text] {
 }
 
 .special-menu-container {
-  margin-top: 8rem;
   padding: 4rem 0;
   background-color: #f6f5f5;
+}
+@media screen and (max-width: 1000px) {
+  .special-menu-container .special-menu-wrapper {
+    max-width: 90%;
+  }
 }
 .special-menu-container .special-menu-wrapper .special-top-header {
   text-align: center;
@@ -989,25 +1031,45 @@ input[type=text] {
 .special-menu-container .special-menu-wrapper .special-top-header h4 {
   margin-bottom: 1rem;
 }
-.special-menu-container .special-menu-wrapper .special-menu-icons {
+@media screen and (max-width: 768px) {
+  .special-menu-container .special-menu-wrapper .special-top-header h3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .special-menu-container .special-menu-wrapper .special-top-header h3 {
+    font-size: 1.4rem;
+  }
+}
+.special-menu-container .special-menu-wrapper .special-menu-bar {
   width: 100%;
-  max-width: 70%;
   margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.special-menu-container .special-menu-wrapper .special-menu-icons .special-menu-nav {
-  padding: 0 1rem;
+.special-menu-container .special-menu-wrapper .special-menu-bar .special-menu-nav {
+  padding: 0.5rem 1rem;
   align-items: center;
 }
-.special-menu-container .special-menu-wrapper .special-menu-icons .special-menu-nav h4 {
+.special-menu-container .special-menu-wrapper .special-menu-bar .special-menu-nav .special-menu-icon {
+  height: 4rem;
+  width: auto;
+}
+@media screen and (max-width: 460px) {
+  .special-menu-container .special-menu-wrapper .special-menu-bar .special-menu-nav .special-menu-icon {
+    height: 3rem;
+  }
+}
+.special-menu-container .special-menu-wrapper .special-menu-bar .special-menu-nav h4 {
   color: rgba(33, 37, 41, 0.75);
 }
-.special-menu-container .special-menu-wrapper .special-menu-icons .special-menu-nav:hover {
+.special-menu-container .special-menu-wrapper .special-menu-bar .special-menu-nav:hover {
   cursor: pointer;
 }
-.special-menu-container .special-menu-wrapper .special-menu-icons .special-menu-nav:hover h4 {
+.special-menu-container .special-menu-wrapper .special-menu-bar .special-menu-nav:hover h4 {
   color: #cc3737;
 }
 

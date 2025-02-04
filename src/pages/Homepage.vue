@@ -65,14 +65,14 @@
         </section>
         <!-- Special Menu Section  -->
         <section class="special-menu-container">
-            <div class="special-menu-wrapper container">
+            <div class="special-menu-wrapper ">
                 <div class="special-top-header">
                     <h4>Special Menu</h4>
                     <h3>Our Specials Menu</h3>
                 </div>
-                <div class="special-menu-icons">
+                <div class="special-menu-bar">
                     <div class="special-menu-nav" v-for="(data, index) in menuicons" :key="index">
-                        <div>
+                        <div class="special-menu-icon">
                             <img :src="data.icon" alt="">
                         </div>
                         <h4>{{ data.title }}</h4>
