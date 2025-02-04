@@ -1,6 +1,6 @@
 <template>
     <div class="discover-container ">
-        <div class="discover-wrapper container">
+        <div class="discover-wrapper ">
             <div v-for="(card, index) in data" :key="index" class="discover-card-wrapper">
                 <div class="discover-card">
                     <div class="discover-image">
