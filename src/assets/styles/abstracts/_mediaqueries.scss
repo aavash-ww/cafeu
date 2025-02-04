@@ -14,7 +14,7 @@
     @content;
   }
 }
-@mixin lg {
+@mixin xl {
   @media screen and (max-width: 1000px) {
     @content;
   }

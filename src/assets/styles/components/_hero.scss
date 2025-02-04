@@ -11,19 +11,19 @@
       gap: 2rem;
       @extend %container;
 
-      @include lg {
+      @include xl {
         flex-wrap: wrap;
         max-width: 90%;
       }
       .hero-content {
-        @include lg {
+        @include xl {
           margin-bottom: 1rem;
         }
         flex: 50%;
         @extend %flex-column;
         gap: 2rem;
         .text-content {
-          @include lg {
+          @include xl {
             text-align: center;
           }
           @extend %flex-column;

@@ -1,12 +1,11 @@
 .discover-container {
   padding-bottom: 4rem;
   padding-top: 4rem;
-
   display: flex;
   justify-content: center;
   .discover-wrapper {
     @extend %container;
-    @include lg {
+    @include xl {
       max-width: 90%;
     }
     height: 100%;

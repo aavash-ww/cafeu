@@ -52,7 +52,7 @@
   background-color: #fff;
 }
 
-.discover-container .discover-wrapper, .hero-section .hero-wrapper .hero-container, .header .header-wrapper {
+.discover-container .discover-wrapper, .hero-section .hero-wrapper .hero-container, .special-offers-container .special-offer-wrapper, .header .header-wrapper {
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
@@ -140,7 +140,7 @@ input[type=text] {
   justify-content: space-between;
   color: #606060;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 632px) {
   .header .header-wrapper {
     width: 100%;
     max-width: 90%;
@@ -388,7 +388,8 @@ input[type=text] {
   background-size: cover;
   width: 100%;
   height: 16rem;
-  margin-top: 4rem;
+  display: flex;
+  align-items: center;
 }
 .special-offers-container::before {
   content: "";
@@ -404,20 +405,47 @@ input[type=text] {
   display: flex;
   align-items: center;
   gap: 4rem;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .special-offers-container .special-offer-wrapper {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 632px) {
+  .special-offers-container .special-offer-wrapper {
+    max-width: 90%;
+  }
 }
 .special-offers-container .special-offer-wrapper .special-offer-text-content {
-  flex: 1;
+  flex: 1 1 50%;
   z-index: 2;
 }
 .special-offers-container .special-offer-wrapper .special-offer-text-content h3 {
   font-size: 2rem;
   color: white;
 }
+@media screen and (max-width: 1000px) {
+  .special-offers-container .special-offer-wrapper .special-offer-text-content h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .special-offers-container .special-offer-wrapper .special-offer-text-content h3 {
+    font-size: 1.2rem;
+  }
+}
 .special-offers-container .special-offer-wrapper .special-offer-text-content p {
   color: white;
 }
+@media screen and (max-width: 1000px) {
+  .special-offers-container .special-offer-wrapper .special-offer-text-content p {
+    font-size: 0.9rem;
+  }
+}
 .special-offers-container .special-offer-wrapper .special-offer-mail {
-  flex: 1;
+  flex: 1 1 50%;
   display: flex;
   align-items: center;
   gap: 0;

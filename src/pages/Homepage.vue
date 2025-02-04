@@ -10,7 +10,7 @@
         </section>
         <!-- Special Offers -->
         <section class="special-offers-container">
-            <div class="special-offer-wrapper container">
+            <div class="special-offer-wrapper">
                 <div class="special-offer-text-content">
                     <h3>Stay Informed About Special Offers</h3>
                     <p>For Exclusive Deals, Coupons, News and More!</p>

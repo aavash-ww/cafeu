@@ -6,7 +6,9 @@
   background-size: cover;
   width: 100%;
   height: 16rem;
-  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  // margin-top: 4rem;
   // padding-top: 4rem;
 
   &::before {
@@ -22,24 +24,41 @@
 
   .special-offer-wrapper {
     display: flex;
+    @include md {
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
     align-items: center;
     gap: 4rem;
-    // padding: 4rem 0;
-    
+    z-index: 2;
+    @extend %container;
+    @include lg {
+      max-width: 90%;
+    }
+
+
     .special-offer-text-content {
-      flex: 1;
+      flex: 1 1 50%;
       z-index: 2;
       h3 {
         font-size: 2rem;
         color: white;
+        @include xl {
+          font-size: 1.5rem;
+        }
+        @include sm {
+          font-size: 1.2rem;
+        }
       }
-      p{
+      p {
         color: white;
+        @include xl {
+          font-size: 0.9rem;
+        }
       }
     }
     .special-offer-mail {
-
-      flex: 1;
+      flex: 1 1 50%;
       display: flex;
       align-items: center;
       gap: 0;
@@ -48,7 +67,6 @@
         width: 70%;
       }
       .special-offer-submit-icon {
-
         width: 42px;
         height: 42px;
         padding: 8px;
