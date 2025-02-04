@@ -83,7 +83,7 @@
         </section>
         <!-- PlayStore section  -->
         <section class="playstore-section">
-            <div class="palystore-wrapper container">
+            <div class="palystore-wrapper">
                 <div class="playstore-text">
                     <h3>Simple Way to Order Your Food Faster</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius-

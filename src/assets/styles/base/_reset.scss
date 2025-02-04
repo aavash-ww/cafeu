@@ -31,6 +31,19 @@ h3 {
   font-size: 2.2rem;
   line-height: 1.3;
 }
+
+@include md {
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@include sm {
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
 h4 {
   font-family: "AriosoRegular", sans-serif;
   color: $primaryColor;
@@ -41,6 +54,18 @@ p {
   color: #818181;
   line-height: 1.6;
   font-size: 1rem;
+}
+
+@include md {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+@include sm {
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 input[type="text"] {
