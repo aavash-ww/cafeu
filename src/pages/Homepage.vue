@@ -28,7 +28,7 @@
         </section>
         <!-- About Us Section  -->
         <section class="about-section">
-            <div class="about-wrapper container">
+            <div class="about-wrapper">
                 <div class="about-image">
                     <img src="../assets/images/about-image.png" alt="">
                 </div>
@@ -54,9 +54,11 @@
                         </div>
 
                     </div>
-                    <button>
+                    <div class="button-container">
+                        <button>
                         About Us
                     </button>
+                    </div>
                 </div>
             </div>
 

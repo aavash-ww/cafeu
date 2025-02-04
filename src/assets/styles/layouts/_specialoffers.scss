@@ -8,8 +8,6 @@
   height: 16rem;
   display: flex;
   align-items: center;
-  // margin-top: 4rem;
-  // padding-top: 4rem;
 
   &::before {
     content: "";
@@ -54,6 +52,9 @@
         color: white;
         @include xl {
           font-size: 0.9rem;
+        }
+        @include sm {
+          font-size: 0.8rem;
         }
       }
     }

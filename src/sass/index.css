@@ -22,7 +22,7 @@
   flex-direction: column;
 }
 
-.about-section .about-wrapper button, .hero-section .hero-wrapper .hero-container .hero-content .order-container .order-button {
+.about-section .about-wrapper .button-container button, .hero-section .hero-wrapper .hero-container .hero-content .order-container .order-button {
   padding: 1rem 1.8rem;
   text-wrap: nowrap;
   border: none;
@@ -31,7 +31,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.about-section .about-wrapper button:hover, .hero-section .hero-wrapper .hero-container .hero-content .order-container .order-button:hover {
+.about-section .about-wrapper .button-container button:hover, .hero-section .hero-wrapper .hero-container .hero-content .order-container .order-button:hover {
   background-color: #292929;
 }
 
@@ -52,7 +52,7 @@
   background-color: #fff;
 }
 
-.discover-container .discover-wrapper, .hero-section .hero-wrapper .hero-container, .special-offers-container .special-offer-wrapper, .header .header-wrapper {
+.about-section .about-wrapper, .discover-container .discover-wrapper, .hero-section .hero-wrapper .hero-container, .special-offers-container .special-offer-wrapper, .header .header-wrapper {
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
@@ -444,6 +444,11 @@ input[type=text] {
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 460px) {
+  .special-offers-container .special-offer-wrapper .special-offer-text-content p {
+    font-size: 0.8rem;
+  }
+}
 .special-offers-container .special-offer-wrapper .special-offer-mail {
   flex: 1 1 50%;
   display: flex;
@@ -806,13 +811,30 @@ input[type=text] {
   height: 6rem;
   width: auto;
 }
+@media screen and (max-width: 460px) {
+  .discover-container .discover-wrapper .discover-card-wrapper .discover-card .discover-image {
+    height: 4rem;
+  }
+}
 .discover-container .discover-wrapper .discover-card-wrapper .discover-card .discover-card-title {
   font-size: 1.2rem;
   line-height: 1.3;
 }
+@media screen and (max-width: 460px) {
+  .discover-container .discover-wrapper .discover-card-wrapper .discover-card .discover-card-title {
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+}
 .discover-container .discover-wrapper .discover-card-wrapper .discover-card .discover-card-description {
   font-size: 0.9rem;
   line-height: 1.6;
+}
+@media screen and (max-width: 460px) {
+  .discover-container .discover-wrapper .discover-card-wrapper .discover-card .discover-card-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
 }
 .discover-container .discover-wrapper .discover-card-wrapper .discover-card .discover-card-link {
   color: #5e5c5c;
@@ -833,35 +855,93 @@ input[type=text] {
 }
 
 .about-section {
-  margin-top: 8rem;
+  padding: 8rem 0;
+  width: 100%;
 }
 .about-section .about-wrapper {
   display: flex;
-  gap: 4rem;
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+@media screen and (max-width: 1000px) {
+  .about-section .about-wrapper {
+    max-width: 90%;
+  }
 }
 .about-section .about-wrapper .about-image {
-  flex: 50%;
+  flex: 1 1 calc(50% - 3rem);
+}
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .about-image {
+    flex: 1 1 100%;
+  }
 }
 .about-section .about-wrapper .about-content {
-  flex: 50%;
+  flex: 1 1 calc(50% - 3rem);
+}
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .about-content {
+    flex: 1 1 100%;
+  }
 }
 .about-section .about-wrapper .about-content .about-text-content {
   gap: 0.6rem;
   margin-bottom: 1.2rem;
 }
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .about-content .about-text-content h4 {
+    text-align: center;
+  }
+}
 .about-section .about-wrapper .about-content .about-text-content h3 {
   font-size: 2.2rem;
   line-height: 1.3;
 }
+@media screen and (max-width: 1000px) {
+  .about-section .about-wrapper .about-content .about-text-content h3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .about-section .about-wrapper .about-content .about-text-content h3 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .about-content .about-text-content h3 {
+    text-align: center;
+  }
+}
 .about-section .about-wrapper .about-content .about-text-content p {
   padding-right: 1rem;
+}
+@media screen and (max-width: 1000px) {
+  .about-section .about-wrapper .about-content .about-text-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (max-width: 460px) {
+  .about-section .about-wrapper .about-content .about-text-content p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .about-content .about-text-content p {
+    text-align: center;
+  }
 }
 .about-section .about-wrapper .about-content .about-subsection {
   padding-top: 1rem;
 }
 .about-section .about-wrapper .about-content .about-subsection .about-subsection-wrapper {
   gap: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .about-content .about-subsection .about-subsection-wrapper {
+    justify-content: center;
+  }
 }
 .about-section .about-wrapper .about-content .about-subsection .about-subsection-wrapper .about-subsection-icon {
   padding: 1rem;
@@ -871,12 +951,30 @@ input[type=text] {
 .about-section .about-wrapper .about-content .about-subsection .about-subsection-wrapper .about-subsection-text h5 {
   font-size: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .about-content .about-subsection .about-subsection-wrapper .about-subsection-text h5 {
+    font-size: 0.9rem;
+  }
+}
 .about-section .about-wrapper .about-content .about-subsection .about-subsection-wrapper .about-subsection-text p {
   font-size: 0.85rem;
   line-height: 1.3;
   padding-right: 1rem;
 }
-.about-section .about-wrapper button {
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .about-content .about-subsection .about-subsection-wrapper .about-subsection-text p {
+    font-size: 0.75rem;
+  }
+}
+.about-section .about-wrapper .button-container {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .about-section .about-wrapper .button-container {
+    justify-content: center;
+  }
+}
+.about-section .about-wrapper .button-container button {
   margin-top: 3rem;
 }
 
