@@ -13,7 +13,8 @@
 
 <style scoped>
 .infinite-slider {
-    /* overflow: hidden; */
+    width: 100%;
+    overflow: hidden;
     margin-bottom: 4rem;
     background-image: url("/src/assets/images/bg-cafeu.png");
     background-position: center;
@@ -27,7 +28,8 @@
 }
 
 .infinite-slider-wrapper {
-    /* overflow: hidden; */
+    width: 100%;
+    overflow: hidden;
     display: flex;
     gap: 8rem;
     width: max-content;
