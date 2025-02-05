@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div class="footer-wrapper container">
+        <div class="footer-wrapper ">
             <div class="footer-content-first">
                 <img class="footer-logo" src="../assets/images/cafeulogo2.png" alt="">
                 <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>

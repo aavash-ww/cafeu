@@ -1,15 +1,31 @@
 <template>
     <section class="infinite-slider">
-        <div class="infinite-slider-wrapper">
-            <img class="slide slide1" src="../assets/images/slide1.png" alt="">
-            <img class="slide slide2" src="../assets/images/slide2.png" alt="">
-            <img class="slide slide3" src="../assets/images/slide3.png" alt="">
-            <img class="slide slide4" src="../assets/images/slide1.png" alt="">
-            <img class="slide slide5" src="../assets/images/slide2.png" alt="">
-            <img class="slide slide6" src="../assets/images/slide3.png" alt="">
+        <div class="slider-container">
+            <div class="infinite-slider-wrapper">
+                <img v-for="(slide, index) in duplicatedSlides" :key="index" class="slide" :src="slide" alt="">
+            </div>
         </div>
     </section>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            slides: [
+                "/src/assets/images/slide1.png",
+                "/src/assets/images/slide2.png",
+                "/src/assets/images/slide3.png"
+            ]
+        };
+    },
+    computed: {
+        duplicatedSlides() {
+            return [...this.slides, ...this.slides];
+        }
+    }
+};
+</script>
 
 <style scoped>
 .infinite-slider {
@@ -27,12 +43,17 @@
     justify-content: center;
 }
 
-.infinite-slider-wrapper {
+.slider-container {
     width: 100%;
     overflow: hidden;
+    position: relative;
+}
+
+
+.infinite-slider-wrapper {
     display: flex;
-    gap: 8rem;
-    width: max-content;
+    gap: 4rem;
+    width: 200%;
     animation: scrollLeft 30s linear infinite;
 }
 
@@ -46,34 +67,10 @@
     }
 }
 
+
 .slide {
     width: 150px;
     height: 56px;
     flex-shrink: 0;
-}
-
-/* Unique animation delays */
-.slide1 {
-    animation-delay: 0s;
-}
-
-.slide2 {
-    animation-delay: 5s;
-}
-
-.slide3 {
-    animation-delay: 10s;
-}
-
-.slide4 {
-    animation-delay: 15s;
-}
-
-.slide5 {
-    animation-delay: 20s;
-}
-
-.slide6 {
-    animation-delay: 25s;
 }
 </style>

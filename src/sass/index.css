@@ -52,7 +52,7 @@
   background-color: #fff;
 }
 
-.special-menu-container .special-menu-wrapper, .about-section .about-wrapper, .discover-container .discover-wrapper, .hero-section .hero-wrapper .hero-container, .news-section .news-wrapper, .playstore-section .palystore-wrapper, .review-section .review-container, .special-offers-container .special-offer-wrapper, .header .header-wrapper {
+.special-menu-container .special-menu-wrapper, .about-section .about-wrapper, .discover-container .discover-wrapper, .hero-section .hero-wrapper .hero-container, .news-section .news-wrapper, .playstore-section .palystore-wrapper, .review-section .review-container, .footer .footer-wrapper, .special-offers-container .special-offer-wrapper, .header .header-wrapper {
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
@@ -574,6 +574,11 @@ input[type=text] {
   display: flex;
   gap: 2rem;
   width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .footer .footer-wrapper {
+    max-width: 90%;
+  }
 }
 .footer .footer-wrapper .footer-content-first {
   flex: 1;
