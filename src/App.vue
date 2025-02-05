@@ -1,6 +1,13 @@
 <template>
   <Layout>
-    <Homepage />
+    <Suspense>
+      <template #default>
+       <Homepage />
+      </template>
+      <template #fallback>
+        <h1>Loading....</h1>
+      </template>
+    </Suspense>
   </Layout>
 </template>
 
