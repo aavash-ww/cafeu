@@ -45,9 +45,12 @@
           }
         }
         .order-container {
-          margin: 0 auto;
+          
           @extend %align-center;
           gap: 1rem;
+          @include xl {
+            margin: 0 auto;
+          }
           .order-button {
             @extend %button-primary;
             @include sm {

@@ -10,7 +10,7 @@
   }
 }
 @mixin sm {
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 480px) {
     @content;
   }
 }

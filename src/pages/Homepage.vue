@@ -104,7 +104,7 @@
         <InfiniteSlider />
         <!-- Review Section  -->
         <section class="review-section">
-            <div class="review-container container">
+            <div class="review-container">
                 <div class="review-heading">
                     <h4>Happy Cutomers</h4>
                     <h3>Our Guestbook</h3>

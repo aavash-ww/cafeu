@@ -1,28 +1,47 @@
 .review-wrapper {
-  padding-left: 4rem;
-  padding-right: 4rem;
   .review-section {
     display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 4rem;
     .review-left-section {
-      flex: 60%;
+      @include md {
+        flex: 1 1 100%;
+      }
+      flex: 1 1 calc(50% - 2rem);
       padding: 0 4rem;
       box-shadow: 0 0 13px 1px #ddd;
       @extend %flex-column;
       border-left: 2px solid $primaryColor;
-
+      padding-bottom: 1rem;
       gap: 2rem;
+      @include sm {
+        gap: 1rem;
+      }
       .review-title {
         font-size: 2.2rem;
+
+        @include md {
+          font-size: 1.8rem;
+        }
+        @include sm {
+          font-size: 1.2rem;
+        }
       }
       .reviewer-section {
         align-items: center;
         .reviewer-name {
           font-size: 1rem;
+          @include sm {
+            font-size: 0.8rem;
+          }
         }
         small {
           font-size: 0.8rem;
+          @include sm {
+            font-size: 0.7rem;
+          }
         }
       }
       .review-button-container {
@@ -41,10 +60,22 @@
       }
     }
     .review-right-section {
-      flex: 40%;
-      height: 28rem;
+      flex: 1 1 calc(50% - 2rem);
+      width: 100%;
+
+      @include md {
+        flex: 1 1 100%;
+      }
       img {
-        @extend %image-contain;
+        @extend %image-contain; 
+        aspect-ratio: 16/9;
+        @include md {
+          height: auto;
+          aspect-ratio: 4/3;
+        }
+        @include sm {
+          aspect-ratio: 1/1;
+        }
       }
     }
   }

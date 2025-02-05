@@ -1,6 +1,10 @@
 .review-section {
   padding-top: 4rem;
   .review-container {
+    @extend %container;
+    @include xl {
+      max-width: 90%;
+    }
     .review-heading {
       text-align: center;
       h4 {
@@ -23,7 +27,7 @@
     }
     // height: 28rem;
     width: 100%;
-    background-color: #fbf1e8;  
+    background-color: #fbf1e8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,13 +51,13 @@
           width: 250px;
           height: auto;
         }
-        
+
         img {
           @extend %image-contain;
         }
       }
     }
-    
+
     .playstore-mobile-screens {
       flex: 1 1 calc(40% - 3rem);
       gap: 1rem;
