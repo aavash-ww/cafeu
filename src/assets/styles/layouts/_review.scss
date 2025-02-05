@@ -70,7 +70,7 @@
         @extend %image-contain; 
         aspect-ratio: 16/9;
         @include md {
-          height: auto;
+          object-position: top center; 
           aspect-ratio: 4/3;
         }
         @include sm {
