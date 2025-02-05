@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <!-- Slieder Button -->
+
         <div v-if="isMediumScreen" class="slider-controls">
             <button v-for="(el, index) in data" :key="index" @click="setSlide(index)"
                 :class="{ active: index === currentIndex }"></button>
@@ -34,15 +34,15 @@ export default {
             data,
             currentIndex: 0,
             autoSlideInterval: null,
-            isMediumScreen: false, 
+            isMediumScreen: false,
         };
     },
     methods: {
         checkScreenSize() {
-            this.isMediumScreen = window.innerWidth < 768; 
+            this.isMediumScreen = window.innerWidth < 768;
             if (!this.isMediumScreen) {
-                clearInterval(this.autoSlideInterval); 
-                this.currentIndex = 0; 
+                clearInterval(this.autoSlideInterval);
+                this.currentIndex = 0;
             } else {
                 this.startAutoSlide();
             }
