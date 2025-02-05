@@ -708,6 +708,16 @@ input[type=text] {
   font-family: "Roboto";
   font-size: 0.9rem;
 }
+@media screen and (max-width: 768px) {
+  .footer .copyrights {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer .copyrights {
+    font-size: 0.5rem;
+  }
+}
 
 .review-section {
   padding-top: 4rem;

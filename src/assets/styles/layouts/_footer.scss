@@ -145,5 +145,11 @@
     padding: 1rem 0;
     font-family: "Roboto";
     font-size: 0.9rem;
+    @include md {
+      font-size: 0.7rem;
+    }
+    @include sm {
+      font-size: 0.5rem;
+    }
   }
 }
