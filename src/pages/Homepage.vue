@@ -115,7 +115,7 @@
         <!-- News and Blog  -->
         <section>
             <div class="news-section">
-                <div class="news-wrapper container">
+                <div class="news-wrapper ">
                     <div class="news-heading">
                         <h4>News & Blogs</h4>
                         <h3>Latest News</h3>
